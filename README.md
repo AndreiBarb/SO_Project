@@ -1,7 +1,6 @@
-# SO_Project
 # Projeto de Sistemas Operativos 2024/2025
 
-Este projeto foi desenvolvido no âmbito da disciplina de **Sistemas Operativos** (SO) do Instituto Superior Técnico (IST) para os cursos **LEIC-A, LEIC-T e LETI**. A segunda parte do projeto tem como objetivo:
+Este projeto foi desenvolvido no âmbito da disciplina de **Sistemas Operativos** (SO) do Instituto Superior Técnico (IST). O projeto tem como objetivo:
 
 1. **Tornar o IST-KVS acessível a processos clientes** que monitorizam pares chave-valor através de _named pipes_.
 2. **Gerir a terminação das ligações entre o IST-KVS e os clientes** utilizando sinais.
@@ -59,17 +58,3 @@ int kvs_unsubscribe(char const *key);
 
 - O servidor escuta o **SIGUSR1** para finalizar todas as conexões ativas.
 - Os clientes detectam o encerramento dos _named pipes_ e terminam automaticamente.
-
-## Avaliação e Submissão
-
-- O projeto deve ser submetido em formato **.zip** no **Fénix** até **13 de janeiro às 23h59**.
-- O ficheiro deve conter apenas o **código-fonte** e o **Makefile** (sem binários).
-- A compilação e testes serão realizados no **cluster sigma**.
-
-## Notas Importantes
-
-- O projeto deve ser compatível com **Linux**.
-- Apenas serão avaliados os projetos presentes no **repositório GIT oficial**.
-- O uso de sistemas como **macOS ou Windows/WSL** é permitido, mas o suporte técnico será limitado.
-
-Para mais informações, consulte o enunciado oficial do projeto no Fénix.
